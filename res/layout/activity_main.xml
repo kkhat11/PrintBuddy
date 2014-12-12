@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" xmlns:android="http://schemas.android.com/apk/res/android">
+    <view android:layout_width="fill_parent"
+          android:layout_height="435dp"
+          class="com.example.printbuddy.MyView" android:id="@+id/mygrid"
+          android:layout_gravity="center_horizontal|top"
+          android:layout_alignParentTop="true"
+          android:layout_alignParentLeft="true" android:layout_alignParentRight="true"
+          android:layout_above="@+id/button"/>
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            android:id="@+id/button" android:layout_alignParentBottom="true" android:layout_alignParentRight="true"
+            android:onClick="Send"/>
+    
+    <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Erase"
+            android:id="@+id/toggleButton" android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true" android:textOff="Erase" android:textOn="Erase"
+            android:onClick="eraseAll"/>
+
+    <TextView
+        android:id="@+id/printbuddyLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/toggleButton"
+        android:layout_alignBottom="@+id/toggleButton"
+        android:layout_centerHorizontal="true"
+        android:text="Print Buddy"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
